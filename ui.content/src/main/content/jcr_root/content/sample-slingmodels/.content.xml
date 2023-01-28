@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:allowedTemplates="[/conf/sample-slingmodels/settings/wcm/templates/(?!xf-).*]"
+        cq:conf="/conf/sample-slingmodels"
+        cq:redirectTarget="/content/sample-slingmodels/us/en"
+        cq:template="/conf/sample-slingmodels/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="SampleSlingModels"
+        sling:configRef="/conf/sample-slingmodels"
+        sling:redirect="{Boolean}true"
+        sling:redirectStatus="{Long}302"
+        sling:resourceType="sample-slingmodels/components/page">
+        <image jcr:primaryType="nt:unstructured">
+            <file/>
+        </image>
+    </jcr:content>
+    <language-masters/>
+    <us/>
+</jcr:root>

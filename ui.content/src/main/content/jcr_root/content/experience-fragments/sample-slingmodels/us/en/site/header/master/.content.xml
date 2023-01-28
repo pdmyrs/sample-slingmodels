@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:tags="[]"
+        cq:template="/conf/sample-slingmodels/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Header"
+        sling:resourceType="sample-slingmodels/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="sample-slingmodels/components/container"
+            layout="simple">
+            <navigation
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sample-slingmodels/components/navigation"
+                collectAllPages="false"
+                navigationRoot="/content/sample-slingmodels/us/en"
+                skipNavigationRoot="false"
+                structureDepth="1"/>
+            <languagenavigation
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sample-slingmodels/components/languagenavigation"
+                navigationRoot="/content/sample-slingmodels/us"
+                structureDepth="2"/>
+            <search
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sample-slingmodels/components/search"
+                searchRoot="/content/sample-slingmodels/us"/>
+            <logo/>
+        </root>
+    </jcr:content>
+</jcr:root>
