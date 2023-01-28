@@ -81,31 +81,33 @@ public class SampleSlingModelExporter {
 
     @PostConstruct
     protected void init() {
-        PageManager pageManager = resourceResolver.adaptTo(PageManager.class);
-        String currentPagePath = Optional.ofNullable(pageManager)
-                .map(pm -> pm.getContainingPage(resource))
-                .map(Page::getPath).orElse("");
-
-        message = "Sling Model Exporter says : \n"
-            + "Current page is:  " + currentPagePath + "\n";
+        message = "Hiya! This text exists only in the Model and not in the JCR";
     }
 
 
+    /**
+     *  This content is NOT in the JCR. It will be return for use in HTL.
+     *  It will NOT be included in a .model.json request at the page level !!!
+     *  It will be included in a .model.json request to this resource
+     *      such as 
+     * 
+     */
     public String getMessage() {
         return message;
     }
 
-
-
    @ValueMapValue
    private String description;
 
-
+    /**
+     *  This content is not in the JCR. 
+     *  It will NOT be included in a .model.json request at the page level !!!
+     *  It will be included in a .model.json request to this resource
+     *      such as 
+     * 
+     */
     public String getDescription() {
-        // return description;
-        return "hello from my own exporter";
+        return description;
     }
-
-    
 
 }

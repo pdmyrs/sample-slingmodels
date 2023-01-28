@@ -4,7 +4,7 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2023-01-28T08:33:00.084-05:00"
+        cq:lastModified="{Date}2023-01-28T08:53:07.792-05:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/sample-slingmodels/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
@@ -80,10 +80,12 @@
                     <sample_slingmodel
                         jcr:created="{Date}2023-01-28T08:33:00.065-05:00"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2023-01-28T08:33:00.065-05:00"
+                        jcr:lastModified="{Date}2023-01-28T08:53:07.776-05:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="sample-slingmodels/components/sample-slingmodel"/>
+                        sling:resourceType="sample-slingmodels/components/sample-slingmodel"
+                        description="Leverage agile frameworks"
+                        text="Leverage agile frameworks"/>
                 </container>
             </container>
         </root>
