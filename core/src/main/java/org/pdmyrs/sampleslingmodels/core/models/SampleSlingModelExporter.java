@@ -87,7 +87,11 @@ public class SampleSlingModelExporter {
 
     /**
      *  This content is NOT in the JCR. It will be return for use in HTL.
+     * 
      *  It will NOT be included in a .model.json request at the page level !!!
+     *  Why NOT ? Because the page model only includes component data in the JCR
+     * 
+     * 
      *  It will be included in a .model.json request to this resource
      *      such as 
      * 
